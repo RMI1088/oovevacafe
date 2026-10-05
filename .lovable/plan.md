@@ -6,7 +6,7 @@ Build the selected “Frosted stone depth” direction as a polished, mobile-fir
 ## What will be built
 - A sticky responsive header with refined Ooveva branding, working mobile navigation, and direct section links.
 - A full-height photographic hero using original editorial café imagery, a restrained dark overlay, the verified location, and prominent Menu and Directions actions.
-- An “Explore Our Menu” section directly after the hero. Because the itemized Google menu cannot be accessed reliably, it will show a polished, clearly editable unavailable state and a link to the live Maps listing rather than fabricated dishes or prices.
+- An “Explore Our Menu” section directly after the hero using the uploaded 13-page menu as the source of truth. It will reproduce the supplied categories, item names, available descriptions, prices, and multi-option labels; descriptions visibly truncated in the source will be omitted rather than completed by guesswork.
 - A short, factual About section using only the verified café type and location.
 - A responsive gallery with four clearly disclosed editorial placeholder images and an accessible lightbox. The images will not be represented as real Ooveva photos.
 - A Visit section with the exact supplied address, a keyless Google map embed, and the supplied directions link.
@@ -21,8 +21,8 @@ Build the selected “Frosted stone depth” direction as a polished, mobile-fir
 
 ## Verification
 - Check the page at 390px mobile and 1280px desktop widths.
-- Test menu tabs/state, mobile navigation, lightbox, section links, phone, Instagram, Maps, and Directions actions.
-- Confirm no unverified menu items, prices, reviews, awards, hours, or claims are present.
+- Test all supplied menu categories and cards, mobile navigation, lightbox, section links, phone, Instagram, Maps, and Directions actions.
+- Compare the rendered menu against all 13 uploaded pages and confirm no unverified menu items, prices, reviews, awards, hours, or claims are present.
 - Confirm page metadata, heading order, alt text, loading behavior, and current preview build health.
 
 ## Technical details
