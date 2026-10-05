@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Save the approved supplied logo, café photos, and menu in the website.
 - [ ] Extract the uploaded Ooveva menu exactly from the supplied PDF.
 - [ ] Add the supplied Ooveva logo to the header, footer, and favicon.
 - [ ] Add the supplied real Ooveva exterior and interior photos to the gallery.
