@@ -6,4 +6,4 @@
 - [ ] Add the supplied real Ooveva exterior and interior photos to the gallery.
 - [ ] Build the selected premium mobile-first café website.
 - [ ] Add verified menu categories, items, descriptions, prices, and menu images.
-- [ ] Verify interactions, links, responsive layouts, and preview health.
+- [ ] Verify interactions, links, responsive layouts, and preview health so the user can test it.
