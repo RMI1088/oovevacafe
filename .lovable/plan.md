@@ -8,7 +8,7 @@ Build the selected “Frosted stone depth” direction as a polished, mobile-fir
 - A full-height photographic hero using original editorial café imagery, a restrained dark overlay, the verified location, and prominent Menu and Directions actions.
 - An “Explore Our Menu” section directly after the hero using the uploaded 13-page menu as the source of truth. It will reproduce the supplied categories, item names, available descriptions, prices, and multi-option labels; descriptions visibly truncated in the source will be omitted rather than completed by guesswork.
 - A short, factual About section using only the verified café type and location.
-- A responsive gallery with four clearly disclosed editorial placeholder images and an accessible lightbox. The images will not be represented as real Ooveva photos.
+- A responsive gallery using the supplied real Ooveva exterior and interior photographs, with an accessible lightbox. Generated editorial food photography will remain clearly labelled as illustrative rather than represented as a real Ooveva dish.
 - A Visit section with the exact supplied address, a keyless Google map embed, and the supplied directions link.
 - A Contact section with the independently corroborated phone number and Instagram link. Opening hours will remain unpublished because available sources conflict. WhatsApp will only be included if the same verified phone endpoint works as a WhatsApp link.
 - A final CTA and compact footer with working navigation and current copyright year.
