@@ -241,10 +241,9 @@ function Index() {
 
         <section id="contact" className="scroll-mt-16 border-y border-border bg-card/35 py-16 sm:py-20">
           <div className="section-shell">
-            <SectionHeading eyebrow="Contact" title="Plan your visit" text="Call, message or follow Ooveva using the verified public details below." />
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <SectionHeading eyebrow="Contact" title="Plan your visit" text="Call or follow Ooveva using the verified public details below." />
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
               <ContactLink href={business.phoneUrl} icon={<Phone />} title="Call" detail={business.phoneDisplay} />
-              <ContactLink href={business.whatsappUrl} icon={<Phone />} title="WhatsApp" detail={business.phoneDisplay} external />
               <ContactLink href={business.instagramUrl} icon={<Instagram />} title="Instagram" detail="@cafe_ooveva" external />
             </div>
             <p className="mt-5 text-xs text-muted-foreground">Opening hours are not displayed because the available public sources conflict.</p>

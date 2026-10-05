@@ -9,7 +9,6 @@ export const business = {
   directionsUrl: "https://maps.app.goo.gl/b1rK7KLvhA7gyPFp9?g_st=ac",
   phoneDisplay: "+91 89773 95454",
   phoneUrl: "tel:+918977395454",
-  whatsappUrl: "https://wa.me/918977395454",
   instagramUrl: "https://www.instagram.com/cafe_ooveva/",
   mapEmbedUrl:
     "https://maps.google.com/maps?q=Ooveva%20The%20In%20House%20Cafe%2C%20Subedari%2C%20Hanamkonda%2C%20Telangana%20506001&output=embed",
@@ -40,7 +39,7 @@ export const menu: MenuCategory[] = [
   {
     name: "Pizza",
     items: [
-      { name: "Margharita", price: 379 },
+      { name: "Margherita", price: 379 },
       { name: "Farmhouse Pizza", price: 419 },
       { name: "Paneer Tikka Pizza", price: 399 },
       { name: "Tandoori Chicken Pizza", price: 429 },
@@ -61,8 +60,8 @@ export const menu: MenuCategory[] = [
   {
     name: "Pasta",
     items: [
-      { name: "Spaghetti Agilo E Olio", price: 299 },
-      { name: "Arrabiatta", options: true },
+      { name: "Spaghetti Aglio e Olio", price: 299 },
+      { name: "Arrabbiata", options: true },
       { name: "Alfredo", options: true },
       { name: "Pesto Genovese", options: true },
       { name: "Salsa Rosa", options: true },
@@ -81,7 +80,7 @@ export const menu: MenuCategory[] = [
     name: "Desserts",
     items: [
       { name: "Hot Chocolate Fudge", price: 329 },
-      { name: "Blueberry Cheese Cake", price: 249 },
+      { name: "Blueberry Cheesecake", price: 249 },
     ],
   },
   { name: "Water", items: [{ name: "Water", price: 20 }] },
@@ -96,7 +95,7 @@ export const menu: MenuCategory[] = [
       { name: "Mango Chilli Margarita", price: 249 },
       { name: "Oreo Shake", price: 239 },
       { name: "Iced Citrus Brew", price: 229 },
-      { name: "Ooveva Cold Coffe", price: 249 },
+      { name: "Ooveva Cold Coffee", price: 249 },
     ],
   },
   {
