@@ -4,7 +4,7 @@
 Build the selected “Frosted stone depth” direction as a polished, mobile-first café website while publishing only verified business information.
 
 ## What will be built
-- A sticky responsive header with refined Ooveva branding, working mobile navigation, and direct section links.
+- A sticky responsive header using the supplied circular Ooveva café logo, working mobile navigation, and direct section links. The same logo will appear in the footer and provide the source for a matching favicon.
 - A full-height photographic hero using original editorial café imagery, a restrained dark overlay, the verified location, and prominent Menu and Directions actions.
 - An “Explore Our Menu” section directly after the hero using the uploaded 13-page menu as the source of truth. It will reproduce the supplied categories, item names, available descriptions, prices, and multi-option labels; descriptions visibly truncated in the source will be omitted rather than completed by guesswork.
 - A short, factual About section using only the verified café type and location.
