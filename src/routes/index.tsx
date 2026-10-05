@@ -84,10 +84,11 @@ const gallery = [
 ] as const;
 
 function Index() {
-  const [activeCategory, setActiveCategory] = useState(menu[0].name);
+  const [activeCategory, setActiveCategory] = useState(menu[0]?.name ?? "");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [showAll, setShowAll] = useState(false);
   const activeMenu = menu.find((category) => category.name === activeCategory) ?? menu[0];
+  const selectedImage = lightboxIndex === null ? undefined : gallery[lightboxIndex];
 
   useEffect(() => {
     if (lightboxIndex === null) return;
@@ -183,7 +184,7 @@ function Index() {
               </div>
             )}
             <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" role="tabpanel">
-              {activeMenu.items.map((item) => (
+              {activeMenu?.items.map((item) => (
                 <article key={item.name} className="glass-panel group flex min-h-28 items-start justify-between gap-4 rounded-xl p-4 transition-transform duration-300 hover:-translate-y-0.5 sm:p-5">
                   <div className="min-w-0">
                     <p className="font-meta text-[9px] uppercase text-primary/80">{activeMenu.name}</p>
@@ -278,9 +279,9 @@ function Index() {
         <DialogContent className="max-h-[92vh] w-[calc(100%-1rem)] max-w-5xl overflow-hidden border-border bg-background p-2 sm:p-3">
           <DialogTitle className="sr-only">Ooveva photo gallery</DialogTitle>
           <DialogDescription className="sr-only">Enlarged real photograph of Ooveva café</DialogDescription>
-          {lightboxIndex !== null && (
+          {lightboxIndex !== null && selectedImage && (
             <div className="relative">
-              <img src={gallery[lightboxIndex].src} alt={gallery[lightboxIndex].alt} className="max-h-[84vh] w-full rounded-lg object-contain" />
+              <img src={selectedImage.src} alt={selectedImage.alt} className="max-h-[84vh] w-full rounded-lg object-contain" />
               <Button variant="cafeOutline" size="icon" className="absolute right-2 top-2" onClick={() => setLightboxIndex(null)} aria-label="Close photo"><X /></Button>
               <div className="absolute inset-x-2 bottom-2 flex justify-between gap-2">
                 <Button variant="cafeOutline" size="sm" onClick={() => setLightboxIndex((lightboxIndex - 1 + gallery.length) % gallery.length)}>Previous</Button>
