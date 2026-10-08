@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep editable business details and menu content in a dedicated content module so verified facts remain separate from presentation code.
+- Resolve CDN asset pointers through src/lib/asset-url.ts with an explicit public origin so external hosts do not need Lovable's asset proxy.
