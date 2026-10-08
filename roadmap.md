@@ -7,3 +7,4 @@
 - [x] Build the selected premium mobile-first café website.
 - [x] Add verified menu categories, items, descriptions, prices, and menu images.
 - [x] Verify interactions, links, responsive layouts, and preview health so the user can test it.
+- [x] Replace the illustrative AI food photo with the user-supplied real Ooveva food photos (sliders, pasta, waffle dessert).
