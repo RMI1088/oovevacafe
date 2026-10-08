@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Fix photo and logo URLs for GitHub → Vercel without changing the website.
+- [x] Fix photo and logo URLs for GitHub → Vercel without changing the website.
 - [x] Save the approved supplied logo, café photos, and menu in the website.
 - [x] Extract the uploaded Ooveva menu exactly from the supplied PDF.
 - [x] Add the supplied Ooveva logo to the header, footer, and favicon.
