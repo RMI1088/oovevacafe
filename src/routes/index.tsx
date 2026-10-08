@@ -221,7 +221,7 @@ function Index() {
             <SectionHeading eyebrow="Ooveva in view" title="The café" text="Real exterior, interior and food photographs supplied for Ooveva." />
             <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
               {gallery.map((image, index) => (
-                <button key={image.src} type="button" onClick={() => setLightboxIndex(index)} className={`group relative overflow-hidden rounded-xl border border-border text-left ${index === 0 ? "col-span-2 aspect-[16/10] md:col-span-2 md:row-span-2 md:aspect-auto" : "aspect-[3/4]"}`} aria-label={`Open ${image.label} photo`}>
+                <button key={image.src} type="button" onClick={() => setLightboxIndex(index)} className={`group relative overflow-hidden rounded-xl border border-border text-left ${index === 0 ? "col-span-2 aspect-[16/10]" : "aspect-[3/4]"}`} aria-label={`Open ${image.label} photo`}>
                   <img src={image.src} alt={image.alt} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width={768} height={1536} loading="lazy" />
                   <span className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-background/70 p-3 text-xs backdrop-blur-md"><span>{image.label}</span><ZoomIn className="h-4 w-4" /></span>
                 </button>
