@@ -16,7 +16,9 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import heroImage from "@/assets/ooveva-hero.jpg";
-import foodImage from "@/assets/ooveva-food.jpg";
+import foodSlidersAsset from "@/assets/ooveva-food-sliders.png.asset.json";
+import foodPastaAsset from "@/assets/ooveva-food-pasta.png.asset.json";
+import foodWaffleAsset from "@/assets/ooveva-food-waffle.png.asset.json";
 import logoAsset from "@/assets/ooveva-logo.png.asset.json";
 import exteriorDayAsset from "@/assets/ooveva-exterior-day.png.asset.json";
 import exteriorNightAsset from "@/assets/ooveva-exterior-night.png.asset.json";
@@ -81,6 +83,9 @@ const gallery = [
   { src: exteriorNightAsset.url, alt: "Ooveva café entrance illuminated at night", label: "Exterior · Night" },
   { src: interiorSeatingAsset.url, alt: "Ooveva café covered seating area", label: "Interior · Seating" },
   { src: interiorWaterAsset.url, alt: "Ooveva café interior with illuminated water feature", label: "Interior · Atmosphere" },
+  { src: foodSlidersAsset.url, alt: "Ooveva mini sliders served with fries and dip", label: "Food · Sliders" },
+  { src: foodPastaAsset.url, alt: "Ooveva creamy pasta served in a ceramic bowl", label: "Food · Pasta" },
+  { src: foodWaffleAsset.url, alt: "Ooveva waffle dessert slices topped with glaze and sprinkles", label: "Food · Dessert" },
 ] as const;
 
 function Index() {
