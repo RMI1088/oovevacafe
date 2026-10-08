@@ -25,6 +25,7 @@ import exteriorNightAsset from "@/assets/ooveva-exterior-night.png.asset.json";
 import interiorSeatingAsset from "@/assets/ooveva-interior-seating.png.asset.json";
 import interiorWaterAsset from "@/assets/ooveva-interior-water.png.asset.json";
 import { business, menu } from "@/content/ooveva";
+import { assetUrl } from "@/lib/asset-url";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -79,13 +80,13 @@ const navItems = [
 ] as const;
 
 const gallery = [
-  { src: exteriorDayAsset.url, alt: "Ooveva café entrance in daylight", label: "Exterior · Day" },
-  { src: exteriorNightAsset.url, alt: "Ooveva café entrance illuminated at night", label: "Exterior · Night" },
-  { src: interiorSeatingAsset.url, alt: "Ooveva café covered seating area", label: "Interior · Seating" },
-  { src: interiorWaterAsset.url, alt: "Ooveva café interior with illuminated water feature", label: "Interior · Atmosphere" },
-  { src: foodSlidersAsset.url, alt: "Ooveva mini sliders served with fries and dip", label: "Food · Sliders" },
-  { src: foodPastaAsset.url, alt: "Ooveva creamy pasta served in a ceramic bowl", label: "Food · Pasta" },
-  { src: foodWaffleAsset.url, alt: "Ooveva waffle dessert slices topped with glaze and sprinkles", label: "Food · Dessert" },
+  { src: assetUrl(exteriorDayAsset), alt: "Ooveva café entrance in daylight", label: "Exterior · Day" },
+  { src: assetUrl(exteriorNightAsset), alt: "Ooveva café entrance illuminated at night", label: "Exterior · Night" },
+  { src: assetUrl(interiorSeatingAsset), alt: "Ooveva café covered seating area", label: "Interior · Seating" },
+  { src: assetUrl(interiorWaterAsset), alt: "Ooveva café interior with illuminated water feature", label: "Interior · Atmosphere" },
+  { src: assetUrl(foodSlidersAsset), alt: "Ooveva mini sliders served with fries and dip", label: "Food · Sliders" },
+  { src: assetUrl(foodPastaAsset), alt: "Ooveva creamy pasta served in a ceramic bowl", label: "Food · Pasta" },
+  { src: assetUrl(foodWaffleAsset), alt: "Ooveva waffle dessert slices topped with glaze and sprinkles", label: "Food · Dessert" },
 ] as const;
 
 function Index() {
@@ -112,7 +113,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border bg-background/82 backdrop-blur-2xl">
         <div className="section-shell grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 md:flex md:justify-between">
           <a href="#home" className="flex min-w-0 items-center gap-2.5" aria-label="Ooveva home">
-            <img src={logoAsset.url} alt="Ooveva café logo" className="h-10 w-10 shrink-0 rounded-full object-cover" width={48} height={48} />
+            <img src={assetUrl(logoAsset)} alt="Ooveva café logo" className="h-10 w-10 shrink-0 rounded-full object-cover" width={48} height={48} />
             <span className="min-w-0">
               <span className="block truncate font-display text-lg font-bold leading-none">Ooveva</span>
               <span className="mt-1 block truncate font-meta text-[9px] uppercase text-muted-foreground">The In House Cafe</span>
@@ -209,9 +210,9 @@ function Index() {
           <div className="section-shell grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div><SectionHeading eyebrow="About Ooveva" title="A café in the heart of Subedari" text="Ooveva – The In House Cafe is located behind Woodland, beside D-Mart in Hanamkonda. Its menu brings together café drinks, quick bites and substantial plates in one place." /></div>
             <div className="grid grid-cols-2 gap-3">
-              <img src={foodSlidersAsset.url} alt="Real Ooveva sliders served with fries and dip" className="col-span-2 aspect-[16/10] w-full rounded-xl border border-border object-cover" width={900} height={1189} loading="lazy" />
-              <img src={foodPastaAsset.url} alt="Real Ooveva creamy pasta served in a ceramic bowl" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={474} loading="lazy" />
-              <img src={foodWaffleAsset.url} alt="Real Ooveva waffle dessert topped with glaze and sprinkles" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={900} loading="lazy" />
+              <img src={assetUrl(foodSlidersAsset)} alt="Real Ooveva sliders served with fries and dip" className="col-span-2 aspect-[16/10] w-full rounded-xl border border-border object-cover" width={900} height={1189} loading="lazy" />
+              <img src={assetUrl(foodPastaAsset)} alt="Real Ooveva creamy pasta served in a ceramic bowl" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={474} loading="lazy" />
+              <img src={assetUrl(foodWaffleAsset)} alt="Real Ooveva waffle dessert topped with glaze and sprinkles" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={900} loading="lazy" />
             </div>
           </div>
         </section>
@@ -270,7 +271,7 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="section-shell grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <div className="flex items-center gap-3"><img src={logoAsset.url} alt="" className="h-12 w-12 rounded-full object-cover" width={48} height={48} /><span className="font-display text-xl font-bold">Ooveva</span></div>
+            <div className="flex items-center gap-3"><img src={assetUrl(logoAsset)} alt="" className="h-12 w-12 rounded-full object-cover" width={48} height={48} /><span className="font-display text-xl font-bold">Ooveva</span></div>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">{business.addressLines.join(", ")}</p>
           </div>
           <nav className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-muted-foreground" aria-label="Footer navigation">
