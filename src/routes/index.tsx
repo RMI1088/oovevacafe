@@ -208,16 +208,17 @@ function Index() {
         <section id="about" className="scroll-mt-16 border-b border-border py-16 sm:py-24">
           <div className="section-shell grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div><SectionHeading eyebrow="About Ooveva" title="A café in the heart of Subedari" text="Ooveva – The In House Cafe is located behind Woodland, beside D-Mart in Hanamkonda. Its menu brings together café drinks, quick bites and substantial plates in one place." /></div>
-            <div className="relative overflow-hidden rounded-2xl border border-border">
-              <img src={foodImage} alt="Illustrative café dish in warm editorial lighting" className="aspect-[4/3] w-full object-cover" width={912} height={1104} loading="lazy" />
-              <span className="absolute bottom-3 left-3 rounded-full bg-background/85 px-3 py-1.5 font-meta text-[9px] uppercase text-muted-foreground backdrop-blur-md">Illustrative food photography</span>
+            <div className="grid grid-cols-2 gap-3">
+              <img src={foodSlidersAsset.url} alt="Real Ooveva sliders served with fries and dip" className="col-span-2 aspect-[16/10] w-full rounded-xl border border-border object-cover" width={900} height={1189} loading="lazy" />
+              <img src={foodPastaAsset.url} alt="Real Ooveva creamy pasta served in a ceramic bowl" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={474} loading="lazy" />
+              <img src={foodWaffleAsset.url} alt="Real Ooveva waffle dessert topped with glaze and sprinkles" className="aspect-square w-full rounded-xl border border-border object-cover" width={900} height={900} loading="lazy" />
             </div>
           </div>
         </section>
 
         <section id="gallery" className="scroll-mt-16 border-b border-border py-16 sm:py-24">
           <div className="section-shell">
-            <SectionHeading eyebrow="Ooveva in view" title="The café" text="Real exterior and interior photographs supplied for Ooveva." />
+            <SectionHeading eyebrow="Ooveva in view" title="The café" text="Real exterior, interior and food photographs supplied for Ooveva." />
             <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
               {gallery.map((image, index) => (
                 <button key={image.src} type="button" onClick={() => setLightboxIndex(index)} className={`group relative overflow-hidden rounded-xl border border-border text-left ${index === 0 ? "col-span-2 aspect-[16/10] md:col-span-2 md:row-span-2 md:aspect-auto" : "aspect-[3/4]"}`} aria-label={`Open ${image.label} photo`}>
