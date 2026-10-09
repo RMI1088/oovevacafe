@@ -246,6 +246,24 @@ function Index() {
           </div>
         </section>
 
+        <section id="reservations" className="scroll-mt-16 py-16 sm:py-24">
+          <div className="section-shell">
+            <div className="glass-panel mx-auto max-w-3xl rounded-2xl p-6 text-center sm:p-10">
+              <p className="font-meta text-[10px] uppercase text-primary sm:text-xs">Reservations & Enquiries</p>
+              <h2 className="mt-3 font-display text-3xl font-bold leading-tight sm:text-4xl">Planning to Visit Us?</h2>
+              <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Make your visit extra special. For table reservations, group bookings, or any enquiries, please contact our team directly.
+              </p>
+              <div className="mx-auto mt-7 flex max-w-md flex-col gap-2.5 sm:flex-row sm:justify-center">
+                <Button asChild variant="cafe" size="cafe" className="sm:min-w-56">
+                  <a href={business.phoneUrl}><Phone />Contact Us to Reserve</a>
+                </Button>
+              </div>
+              <p className="mt-4 font-meta text-xs text-muted-foreground">Call {business.phoneDisplay}</p>
+            </div>
+          </div>
+        </section>
+
         <section id="contact" className="scroll-mt-16 border-y border-border bg-card/35 py-16 sm:py-20">
           <div className="section-shell">
             <SectionHeading eyebrow="Contact" title="Plan your visit" text="Call or follow Ooveva using the verified public details below." />
@@ -253,7 +271,7 @@ function Index() {
               <ContactLink href={business.phoneUrl} icon={<Phone />} title="Call" detail={business.phoneDisplay} />
               <ContactLink href={business.instagramUrl} icon={<Instagram />} title="Instagram" detail="@cafe_ooveva" external />
             </div>
-            <p className="mt-5 text-xs text-muted-foreground">Opening hours are not displayed because the available public sources conflict.</p>
+            <p className="mt-5 text-xs text-muted-foreground">For table reservations, please <a href={business.phoneUrl} className="text-primary underline-offset-4 hover:underline">contact us directly</a>. Opening hours are not displayed because the available public sources conflict.</p>
           </div>
         </section>
 
