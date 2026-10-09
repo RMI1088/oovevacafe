@@ -1,5 +1,6 @@
 # Roadmap
 
+- [x] Add a "Reserve on WhatsApp" button using the verified number, without changing the design.
 - [x] Fix photo and logo URLs for GitHub → Vercel without changing the website.
 - [x] Save the approved supplied logo, café photos, and menu in the website.
 - [x] Extract the uploaded Ooveva menu exactly from the supplied PDF.

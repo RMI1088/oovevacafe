@@ -1,3 +1,8 @@
+// Reuses the verified café number: +91 89773 95454 -> 918977395454 (country code, no spaces or symbols).
+const whatsappNumber = "918977395454";
+const whatsappMessage =
+  "Hello Ooveva Café! I'd like to enquire about reserving a table. Could you please let me know the availability?";
+
 export const business = {
   name: "Ooveva – The In House Cafe",
   shortName: "Ooveva",
@@ -9,6 +14,7 @@ export const business = {
   directionsUrl: "https://maps.app.goo.gl/b1rK7KLvhA7gyPFp9?g_st=ac",
   phoneDisplay: "+91 89773 95454",
   phoneUrl: "tel:+918977395454",
+  whatsappUrl: `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
   instagramUrl: "https://www.instagram.com/cafe_ooveva/",
   mapEmbedUrl:
     "https://maps.google.com/maps?q=Ooveva%20The%20In%20House%20Cafe%2C%20Subedari%2C%20Hanamkonda%2C%20Telangana%20506001&output=embed",
